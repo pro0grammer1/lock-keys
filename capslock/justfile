@@ -1,5 +1,5 @@
 name := 'lock-keys'
-appid := 'com.github.pro0grammer1.lock-keys'
+appid := 'com.github.pro0grammer1.lock-keys.capslock'
 
 rootdir := ''
 prefix := '/usr'

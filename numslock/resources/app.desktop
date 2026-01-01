@@ -2,7 +2,7 @@
 Name=Lock Keys
 Comment=An application to display when lock keys are turned on or off.
 Type=Application
-Icon=com.github.pro0grammer1.lock-keys
+Icon=com.github.pro0grammer1.lock-keys.numslock
 Exec=lock-keys %F
 Terminal=false
 StartupNotify=true

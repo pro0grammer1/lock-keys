@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="48"
+   height="48"
+   viewBox="0 0 12.7 12.7"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1" style="opacity:0.4">
+    <rect
+       style="fill:#000000;fill-opacity:0;stroke:#fff;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal"
+       id="rect1"
+       width="11.68646"
+       height="11.686459"
+       x="0.51044303"
+       y="0" 
+       rx="2"
+       ry="2"
+       />
+    <text
+       xml:space="preserve"
+       style="font-size:12.134px;writing-mode:lr-tb;direction:ltr;fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-dashoffset:0;paint-order:normal"
+       x="2.3220115"
+       y="10.26333"
+       id="text2"
+       transform="scale(1.0381181,0.96328153)"><tspan
+         id="tspan2"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'P052';-inkscape-font-specification:'P052';fill:#fff;fill-opacity:1;stroke:none;stroke-width:0;stroke-dasharray:none"
+         x="3.1"
+         y="10.26333">1</tspan></text>
+  </g>
+</svg>

@@ -3,7 +3,7 @@
 use crate::config::Config;
 use crate::fl;
 use cosmic::cosmic_config::{self, CosmicConfigEntry};
-use cosmic::iced::{window::Id, Limits, Subscription};
+use cosmic::iced::{Limits, Subscription, window::Id};
 use cosmic::iced_winit::commands::popup::{destroy_popup, get_popup};
 use cosmic::prelude::*;
 use cosmic::widget;
@@ -45,7 +45,7 @@ impl cosmic::Application for AppModel {
     type Message = Message;
 
     /// Unique identifier in RDNN (reverse domain name notation) format.
-    const APP_ID: &'static str = "com.github.pro0grammer1.lock-keys";
+    const APP_ID: &'static str = "com.github.pro0grammer1.lock-keys.capslock";
 
     fn core(&self) -> &cosmic::Core {
         &self.core
@@ -91,9 +91,12 @@ impl cosmic::Application for AppModel {
     /// This view should emit messages to toggle the applet's popup window, which will
     /// be drawn using the `view_window` method.
     fn view(&self) -> Element<'_, Self::Message> {
+        let icon =
+            widget::icon::from_path("/home/pro0grammer/Codes/lock-keys/capslock/resources/capslockon.svg".into());
+
         self.core
             .applet
-            .icon_button("display-symbolic")
+            .icon_button_from_handle(icon)
             .on_press(Message::TogglePopup)
             .into()
     }
@@ -178,7 +181,7 @@ impl cosmic::Application for AppModel {
                         .min_height(200.0)
                         .max_height(1080.0);
                     get_popup(popup_settings)
-                }
+                };
             }
             Message::PopupClosed(id) => {
                 if self.popup.as_ref() == Some(&id) {

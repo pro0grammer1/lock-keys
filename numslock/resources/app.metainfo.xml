@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
-  <id>com.github.pro0grammer1.lock-keys</id>
+  <id>com.github.pro0grammer1.lock-keys.numslock</id>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>MPL-2.0</project_license>
-  <name>Lock Keys</name>
-  <summary>An application to display when lock keys are turned on or off.</summary>
+  <name>Nums Lock Key</name>
+  <summary>An application to display when nums lock key is turned on or off.</summary>
   <icon type="remote" width="64" height="64" scale="1">
-    https://github.com/pro0grammer1/lock-keys/raw/main/resources/icons/hicolor/scalable/apps/icon.svg
+    https://github.com/pro0grammer1/lock-keys/numslock/raw/main/resources/icons/hicolor/scalable/apps/icon.svg
   </icon>
-  <url type="vcs-browser">https://github.com/pro0grammer1/lock-keys</url>
-  <launchable type="desktop-id">com.github.pro0grammer1.lock-keys.desktop</launchable>
+  <url type="vcs-browser">https://github.com/pro0grammer1/lock-keys/numslock</url>
+  <launchable type="desktop-id">com.github.pro0grammer1.lock-keys.numslock.desktop</launchable>
   <provides>
-    <id>com.github.pro0grammer1.lock-keys</id>
+    <id>com.github.pro0grammer1.lock-keys.numslock</id>
     <binaries>
       <binary>lock-keys</binary>
     </binaries>

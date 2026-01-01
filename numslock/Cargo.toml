@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2024"
 license = "MPL-2.0"
 description = "An application to display when lock keys are turned on or off."
-repository = "https://github.com/pro0grammer1/lock-keys"
+repository = "https://github.com/pro0grammer1/lock-keys/numslock"
 
 [dependencies]
 futures-util = "0.3.31"
