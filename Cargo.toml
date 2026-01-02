@@ -1,0 +1,7 @@
+[workspace]
+members = [
+    "daemon",
+    "capslock",
+    "numslock"
+]
+resolver = "3"
