@@ -1,0 +1,24 @@
+[Unit]
+Description=A daemon that gives live update about capslock and numslock keys and exposes their states to frontend.
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/home/pro0grammer/Codes/lock-keys/target/debug/daemon
+
+Restart=always
+RestartSec=0.5
+
+# Needs root for /dev/input
+User=root
+Group=root
+
+# Dev-friendly env
+Environment=RUST_LOG=debug
+Environment=RUST_BACKTRACE=1
+
+# Optional but useful
+WorkingDirectory=/home/pro0grammer/Codes/lock-keys/
+
+[Install]
+WantedBy=multi-user.target
