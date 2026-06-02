@@ -1,4 +1,5 @@
 use evdev::{Device, KeyCode};
+use log::{debug, error, info};
 use std::fs;
 
 fn main() -> std::io::Result<()> {
@@ -35,7 +36,12 @@ fn main() -> std::io::Result<()> {
     loop {
         let events = dev.fetch_events()?;
         for ev in events {
-            println!("{:?}", ev);
+            if ev.event_type() == evdev::EventType::KEY {
+                let key = KeyCode(ev.code());
+                if key == evdev::KeyCode::KEY_NUMLOCK || key == evdev::KeyCode::KEY_CAPSLOCK {
+                    println!("{:?}", ev);
+                }
+            }
         }
     }
 }
